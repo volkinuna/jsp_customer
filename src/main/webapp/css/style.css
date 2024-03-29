@@ -1,0 +1,313 @@
+@charset "UTF-8";
+
+/* 초기화 태그 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+/* list.jsp */
+.list_wrap {
+	width: 1300px;
+	margin: 0 auto; 
+}
+
+.customer-list {
+	width: 100%;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.bt_register {
+	text-align: right;
+}
+
+.bt_register a {
+	display: inline-block;
+	min-width: 100px;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 1.0rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background-color: #008080;
+	color: #fff;
+}
+
+.bt_register a:hover {
+	background-color: #ff8080;
+	color: #fff;
+	font-weight: bold;
+}
+
+.customer-board {
+	width: 100%;
+} 
+
+.customer-board th, .customer-board td {
+	text-align: center;
+}
+
+.board_page {
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center; 
+}
+
+.board_page a {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	box-sizing: border-box;
+	line-height: 25px; 
+	border-left: 0;
+}
+
+.board_page a:hover {
+	text-decoration: underline;
+}
+
+.board_page a.bt {
+	font-size: 0.7rem;
+	letter-spacing: -1px;
+}
+
+.board_page a.num {
+	font-size: 0.9rem;
+}
+
+.board_page a.num.on {
+	border-color: #6f6f6f;
+	background: #6f6f6f;
+	color: #fff;
+}
+
+/* info.jsp, edit.jsp */
+.info_wrap, .edit_wrap {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.card-body h4 {
+	padding: 20px;
+}
+
+
+.info_img_out, .edit_img_out {
+	padding: 5px;
+}
+
+.info_wrap .card img, .edit_wrap .card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.info_container, .edit_container {
+	display: flex;
+}
+
+.info_detail, .edit_detail {
+    display: flex;
+    flex-direction: column;
+    width: 70px; 
+}
+
+.info_detail p, .edit_detail p {
+	text-align: right;
+}
+
+.info_content p, .edit_content p {
+	padding-left: 15px;
+}
+
+.info_bts, .edit_bts {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.info_bts a, .edit_bts a {
+	display: inline-block;
+	min-width: 80px; 
+	margin-left: 10px;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 1.0rem;
+	text-align: center; 
+	font-weight: bold;
+}
+
+.info_bts a:hover,
+.edit_bts a:hover,
+.bt_edit_delt a:hover {
+	background-color: #ff8080;
+	color: #fff;
+	font-weight: bold;
+}
+
+.info_bts a.on, .edit_bts a.on {
+	background-color: #008080;
+	color: #fff;
+	font-weight: bold;
+}
+
+.info_bts a.on:hover, .edit_bts a.on:hover {
+	background-color: #ff8080;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* info.jsp */
+.info_head {
+	margin-bottom: 46px;	
+}
+
+/* edit.jsp */
+.edit_detail p {
+	margin-bottom: 18.5px;
+}
+
+.bt_edit_delt {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.bt_edit_delt a {
+	display: inline-block;
+	min-width: 65px; 
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 0.9rem;
+	text-align: center; 
+	font-weight: bold;
+	margin-top: 0;
+	background-color: #000;
+	color: #fff;
+}
+
+.file_out {
+	margin-top: -10px;
+}
+
+.card-title input[type="text"] {
+	width: 95%;
+}
+
+.edit_content {
+	width: 85%;
+}
+
+.edit_content input[type="text"] {
+	width: 90%;
+}
+
+.edit_content select {
+	width: 90%;
+}
+
+.edit_content input[type="radio"] {
+	margin-left: 10px;
+}
+
+/* register.jsp*/
+.register_wrap {
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.register_head {
+	margin-bottom: 40px;
+}
+
+.register_board {
+	width: 100%;
+}
+
+.register_board th {
+	text-align: center;
+}
+
+.register_board td > input[type="text"], 
+.register_board td > input[type="number"] {
+	width: 85%
+}
+
+.register_board td > label:first-child {
+	margin-left: 10px;
+}
+
+.register_board td > label:last-child {
+	margin-left: 30px;
+}
+
+.register_board td > select {
+	width: 30%;
+}
+
+.register_bts {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.register_bts a {
+	display: inline-block;
+	min-width: 80px; 
+	margin-left: 10px;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	font-size: 1.0rem;
+	text-align: center; 
+	font-weight: bold;
+}
+
+.register_bts a:hover {
+	background-color: #ff8080;
+	color: #fff;
+	font-weight: bold;
+}
+
+.register_bts a.on {
+	background-color: #008080;
+	color: #fff;
+	font-weight: bold;
+}
+
+.register_bts a.on:hover {
+	background-color: #ff8080;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* 768 ~ 1000px */
+@media all and (max-width: 1000px) {
+	.list_wrap {
+		width: 100vw; /* 뷰포트의 크기에 맞춰서 width를 100%로.. */
+	}
+	
+	.info_wrap {
+		width: 100vw;
+	}
+	
+	.register_wrap {
+		width: 100vw;
+	}
+}
+
